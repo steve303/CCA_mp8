@@ -1,4 +1,4 @@
-Sample Output of 'MP3&#955;SQLite.py'
+Sample Output of 'MP3\_SQLite.py'
 ~~~sh
 Opened database successfully
 Table created successfully
