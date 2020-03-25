@@ -22,10 +22,6 @@ sqlContext = SQLContext(sc)
 # 4. MapReduce (10 points): List the three most frequent 'word' with their count of appearances
 ####
 
-# RDD API
-
-# [('at_ADP', 425), ('all', 425), ('about', 425)]
-
 # Spark SQL
 
 # There are 18 items with count = 425, so could be different 
