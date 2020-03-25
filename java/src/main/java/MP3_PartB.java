@@ -48,8 +48,6 @@ public final class MP3_PartB {
      * this question via both RDD api & #Spark SQL
      */
 
-     // RDD API
-
      // Dataset/Spark SQL API
 
     spark.stop();
