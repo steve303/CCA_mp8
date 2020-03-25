@@ -44,9 +44,6 @@ public final class MP3_PartC {
     /*
      * 3. Filtering (10 points) Count the number of appearances of word 'ATTRIBUTE'
      */
-    // RDD API
-
-
     // Dataset/Spark SQL API
 
 
