@@ -20,10 +20,6 @@ sqlContext = SQLContext(sc)
 # 3. Filtering (10 points) Count the number of appearances of word 'ATTRIBUTE'
 ####
 
-# RDD api
-
-# 201
-
 # Spark SQL
 
 # +--------+                                                                      
