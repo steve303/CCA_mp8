@@ -26,10 +26,6 @@ df2 = df.select("word", "count1").distinct().limit(1000);
 df2.createOrReplaceTempView('gbooks2')
 
 # Now we are going to perform a JOIN operation on 'df2'. Do a self-join on 'df2' in lines with the same #'count1' values and see how many lines this JOIN could produce. Answer this question via DataFrame API and #Spark SQL API
-# Dataframe API
-
-# output: 9658
-
 # Spark SQL API
 
 # output: 9658
