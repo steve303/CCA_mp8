@@ -21,10 +21,6 @@ sqlContext = SQLContext(sc)
 # 2. Counting (10 points): How many lines does the file contains? Answer this question via both RDD api & #Spark SQL
 ####
 
-# RDD api
-
-# 86618505
-
 # Spark SQL 
 
 
