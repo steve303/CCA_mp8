@@ -47,9 +47,6 @@ public final class MP3_PartD {
      * of appearances
      */
 
-    // RDD API
-
-
     // Dataset/Spark SQL API
 
 
