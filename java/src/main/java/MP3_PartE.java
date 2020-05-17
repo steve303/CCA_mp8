@@ -50,7 +50,7 @@ public final class MP3_PartE {
      * lines this JOIN could produce. Answer this question via DataFrame API and Spark SQL API
      */
 
-    Dataset<Row> df2 = df.select("word", "count1").distinct().limit(1000);
+    Dataset<Row> df2 = df.select("word", "count1").distinct().limit(100);
     df2.createOrReplaceTempView("gbooks2");
     // Spark SQL API
 
