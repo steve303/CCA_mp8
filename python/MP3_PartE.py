@@ -22,11 +22,23 @@ sqlContext = SQLContext(sc)
 # 5. Joining (10 points): The following program construct a new dataframe out of 'df' with a much smaller size.
 ####
 
-df2 = df.select("word", "count1").distinct().limit(100);
-df2.createOrReplaceTempView('gbooks2')
-
 # Now we are going to perform a JOIN operation on 'df2'. Do a self-join on 'df2' in lines with the same #'count1' values and see how many lines this JOIN could produce. Answer this question via DataFrame API and #Spark SQL API
 # Spark SQL API
 
 # output: 210
+schema = StructType([StructField('word', StringType(), True), \
+                            StructField('count1', IntegerType(), True), \
+                                                StructField('count2', IntegerType(), True), \
+                                                                    StructField('count3', IntegerType(), True) \
+                                                                                        ])
+df = sqlContext.read.format('csv').options(delimiter='\t').schema(schema).load('./gbooks')
+#print(df.show(n=10)
+df.createOrReplaceTempView('books')
+#output = sqlContext.sql("SELECT COUNT(*) FROM books WHERE word LIKE 'ATTRIBUTE'").show()
+#output = sqlContext.sql("SELECT word, COUNT(*) FROM books GROUP BY word ORDER BY COUNT(*) DESC").show(n=3)
+df2 = df.select("word", "count1").distinct().limit(100);
+df2.createOrReplaceTempView('gbooks2')
+df_join = sqlContext.sql("SELECT * FROM gbooks2 A INNER JOIN gbooks2 B ON A.count1=B.count1")
 
+
+print(df_join.count())
