@@ -41,5 +41,5 @@ df = sqlContext.read.format('csv').options(delimiter='\t').schema(schema).load('
 #print(df.show(n=10)
 df.createOrReplaceTempView('books')
 #output = sqlContext.sql("SELECT COUNT(*) FROM books WHERE word LIKE 'ATTRIBUTE'").show()
-output = sqlContext.sql("SELECT word, COUNT(*) FROM books GROUP BY word ORDER BY COUNT(*) DESC").show(n=3)
-print(output)
+sqlContext.sql("SELECT word, COUNT(*) FROM books GROUP BY word ORDER BY COUNT(*) DESC").show(n=3)
+

@@ -38,6 +38,6 @@ schema = StructType([StructField('word', StringType(), True), \
 df = sqlContext.read.format('csv').options(delimiter='\t').schema(schema).load('./gbooks')
 #print(df.show(n=10)
 df.createOrReplaceTempView('books')
-output = sqlContext.sql('SELECT COUNT(*) FROM books').show()
-print(output)
+sqlContext.sql('SELECT COUNT(*) FROM books').show()
+#print(output)
 
