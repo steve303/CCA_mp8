@@ -27,5 +27,15 @@ sqlContext = SQLContext(sc)
 # +--------+
 # |     201|
 # +--------+
+schema = StructType([StructField('word', StringType(), True), \
+                    StructField('count1', IntegerType(), True), \
+                                    StructField('count2', IntegerType(), True), \
+                                                        StructField('count3', IntegerType(), True) \
+                                                                                ])
 
+df = sqlContext.read.format('csv').options(delimiter='\t').schema(schema).load('./gbooks')
+#print(df.show(n=10)
+df.createOrReplaceTempView('books')
+output = sqlContext.sql("SELECT COUNT(*) FROM books WHERE word LIKE 'ATTRIBUTE'").show()
+print(output)
 
