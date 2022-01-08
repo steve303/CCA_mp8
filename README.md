@@ -1,3 +1,9 @@
+steps:
+to perform some sparkSQL tasks we want to load a large sample dataset, perform a wget using the url below and unzip the .gz file
+1.  wget http://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-1gram-20120701-a.gz 
+2.  
+
+ Download the gbook file ( http://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-1gram-20120701-a.gz ), unzip it into our current directory (around 1.8g), rename it to "gbooks" (This is important!) , and write a function to load it in an RDD & DataFrame. Print your DataFrame's schema. NOTE: Your programs should always assume "gbooks " file is in the current directory! 
 Sample Output of 'MP3\_SQLite.py'
 ~~~sh
 Opened database successfully
@@ -26,3 +32,5 @@ Records created successfully
 Total number of rows updated : 5
 Total number of rows deleted : 6
 ~~~
+
+
