@@ -1,10 +1,11 @@
 steps:  
-create a container from docker image    
+1.  create a container from docker image    
 
-After cloning the repo, issue the commands below  
-`cd dockerImage_mp9`  
-`docker build -t mp9 .` (this builds the image, whose name is "mp9", don't forget the . at the end of command)  
-`docker run -it mp9 /bin/bash`  (this creates an instance, aka container, of the image, mp9; you should now be running in the environment of the container)  
+After cloning the repo, issue the commands below:  
+`cd dockerImage_mp9`  - This is where the "Dockerfile" resides and contains the information to build the image.  
+`docker build -t mp9 .` - This builds the image, whose name is "mp9", don't forget the . at the end of command.  
+`docker run -it mp9 /bin/bash`  - This creates an instance, aka "container", of the image, mp9; you should now be running in the environment of the container.  
+You should now get a prompt that looks like this: 
 
 load dataset  
  Download the gbook file ( http://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-1gram-20120701-a.gz ), unzip it into our current directory (around 1.8g), rename it to "gbooks" (This is important!) , and write a function to load it in an RDD & DataFrame. Print your DataFrame's schema. NOTE: Your programs should always assume "gbooks " file is in the current directory! 
