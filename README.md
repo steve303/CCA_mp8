@@ -25,9 +25,9 @@ Within the /sparkSQL/python/ folder issue the command: `spark-submit <filename>`
 To run interactively type `pyspark` into the terminal.  You can run the commands as in the .py files, i.e. MP3_partA.py, with some minor deviations.  Firstly, you don't need to create an instance of the spark session (sparkContext()); it is created for you and is named "spark".  So use this whenever the instance name is required.  
 
 5. To exit container and restart  
-To exit the container type "ctl-d".  To restart the container enter:
-`docker start <container name>` - this restarts the container;
-`docker ps` - this lists all of the docker processes, find your container's process#;
+To exit the container type "ctl-d".  To restart the container enter:  
+`docker start <container name>` - this restarts the container;  
+`docker ps` - this lists all of the docker processes, find your container's process#;  
 `docker exec -it <process#> /bin/bash` - this will bring up BASH interface in your container.  
 
 6.  To bring up another instance-container of your image  
