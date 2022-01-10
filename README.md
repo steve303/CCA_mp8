@@ -13,11 +13,11 @@ You should now get a prompt that looks like this: `root@373d63d17f59:/#`.  You a
 2.  Load Dataset (container)  
 Within the container we need to download the data set.  If you want to work with Python language, change the current directory to `python/` otherwise `java/` directory for java.  For this section, issue the commands below:  
 `wget http://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-1gram-20120701-a.gz` - Download the gbook file ( http://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-1gram-20120701-a.gz ).  
-`gzip -d googlebooks-eng-all-1gram-20120701-a.gz` - This will decompress the .gz file.
+`gzip -d googlebooks-eng-all-1gram-20120701-a.gz` - This will decompress the .gz file.  
 `mv googlebooks-eng-all-1gram-20120701-a.gz gbooks` - Rename to "gbooks"; it's a big file 1.8GB.  
 NOTE: Your programs should always assume "gbooks " file is in the current directory, in this case either `python/` or `java/`.  
 
-
+3.  Run example python sparkSQL scripts
 
 Sample Output of 'MP3\_SQLite.py'
 ~~~sh
