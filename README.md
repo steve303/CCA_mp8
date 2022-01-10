@@ -8,7 +8,7 @@ After cloning the repo, issue the commands below:
 You should now get a prompt that looks like this: `root@373d63d17f59:/#`.  You are now working from the Docker container via BASH (BourneAgainSHell).  
 
 2.  Load Dataset  
-If you want to work with Python, change directory to python otherwise java directory for java.  Download the gbook file ( http://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-1gram-20120701-a.gz ).  Use `wget` to download the `.gz` file then decompress using `gzip -d <file_name>`.  Rename to "gbooks".  NOTE: Your programs should always assume "gbooks " file is in the current directory!
+If you want to work with Python, change directory to python otherwise java directory for java.  Download the gbook file ( http://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-1gram-20120701-a.gz ).  Use `wget` to download the `.gz` file then decompress using `gzip -d <file_name>`.  Rename to "gbooks"; it's a big file 1.8GB.  NOTE: Your programs should always assume "gbooks " file is in the current directory!
 
 
 Sample Output of 'MP3\_SQLite.py'
