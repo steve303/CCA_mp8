@@ -34,7 +34,10 @@ To exit the container type "ctl-d".  To restart the container enter:
 6.  To bring up another instance-container of your image  
 `docker run -it <image name> /bin/bash`    
 
-### Resources   
+### Credits  
+Some contents were sourced from UIUC MCS coursework  
+
+### Supplemental Resources   
 [video demonstration](https://www.dropbox.com/s/i8qhyhnywqw5sno/mp08_sparkSQL.mp4?dl=0)  
 [problem statement](https://www.dropbox.com/s/on8xz4hd1cy0tie/03_machine-problem-8-sparksql_instructions.html?dl=0)  
 note: links require a password which is the repo name
