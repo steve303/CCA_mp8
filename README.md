@@ -1,5 +1,5 @@
 ## Examples of using pyspark to perform basic operations in spark SQL within a Docker container
-Steps:  
+### Steps:  
 1.  Create a container from docker image   
 Note, the purpose of the docker container is so that we don't have to install Apache Spark on our "host" machine.  Alternatively you can install Apache Spark on your machine which will take a bit more work.  
 First, open up a terminal window and issue the commands below:  
