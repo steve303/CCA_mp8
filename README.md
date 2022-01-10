@@ -22,35 +22,15 @@ NOTE: Your programs should always assume "gbooks " file is in the current direct
 Within the /sparkSQL/python/ folder issue the command: `spark-submit <filename>`.  Filename in our case will be i.e., MP3_partA.py.  Note, even though we are running a .py file we do not issue the typical command "python3 filename.py" since we want to use ApacheSpark.  Each file in this folder performs a different task to demonstrate how to perform basic spark SQL tasks.  These are creating the schema, defining a table/RDD, and performing SQL queries.    
 
 4. Run pyspark interactively (container)  
-To run interactively type `pyspark` into the terminal.  You can run the commands as in the .py files, i.e. MP3_partA.py, with some minor deviations.  Firstly,  
+To run interactively type `pyspark` into the terminal.  You can run the commands as in the .py files, i.e. MP3_partA.py, with some minor deviations.  Firstly, you don't need to create an instance of the spark session (sparkContext()); it is created for you and is named "spark".  So use this whenever the instance name is required.  
 
-Sample Output of 'MP3\_SQLite.py'
-~~~sh
-Opened database successfully
-Table created successfully
-ID =  1
-NAME =  Paul
-ADDRESS =  California
-SALARY =  20000.0 
+5. To exit container and restart  
+To exit the container type "ctl-d".  To restart the container enter:
+`docker start <container name>` - this restarts the container;
+`docker ps` - this lists all of the docker processes, find your container's process#;
+`docker exec -it <process#> /bin/bash` - this will bring up BASH interface in your container.  
 
-ID =  2
-NAME =  Allen
-ADDRESS =  Texas
-SALARY =  15000.0 
-
-ID =  3
-NAME =  Teddy
-ADDRESS =  Norway
-SALARY =  20000.0 
-
-ID =  4
-NAME =  Mark
-ADDRESS =  Rich-Mond 
-SALARY =  65000.0 
-
-Records created successfully
-Total number of rows updated : 5
-Total number of rows deleted : 6
-~~~
+6.  To bring up another instance-container of your image  
+`docker run -it <image name> /bin/bash  
 
 
