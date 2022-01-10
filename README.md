@@ -22,7 +22,7 @@ NOTE: Your programs should always assume "gbooks " file is in the current direct
 Within the /sparkSQL/python/ folder issue the command: `spark-submit <filename>`.  Filename in our case will be i.e., MP3_partA.py.  Note, even though we are running a .py file we do not issue the typical command "python3 filename.py" since we want to use ApacheSpark.  Each file in this folder performs a different task to demonstrate how to perform basic spark SQL tasks.  These are creating the schema, defining a table/RDD, and performing SQL queries.    
 
 4. Run pyspark interactively (container)  
-
+To run interactively type `pyspark` into the terminal.  You can run the commands as in the .py files, i.e. MP3_partA.py, with some minor deviations.  Firstly,  
 
 Sample Output of 'MP3\_SQLite.py'
 ~~~sh
