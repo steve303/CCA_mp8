@@ -31,6 +31,6 @@ To exit the container type "ctl-d".  To restart the container enter:
 `docker exec -it <process#> /bin/bash` - this will bring up BASH interface in your container.  
 
 6.  To bring up another instance-container of your image  
-`docker run -it <image name> /bin/bash  
+`docker run -it <image name> /bin/bash`    
 
 
